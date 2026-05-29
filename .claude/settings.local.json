@@ -3,7 +3,8 @@
     "allow": [
       "PowerShell(node --version)",
       "PowerShell(npm --version)",
-      "PowerShell($ErrorActionPreference='SilentlyContinue'; \"plugin-react latest: \" + \\(npm view @vitejs/plugin-react version\\); \"plugin-react peer vite: \" + \\(npm view @vitejs/plugin-react peerDependencies.vite\\))"
+      "PowerShell($ErrorActionPreference='SilentlyContinue'; \"plugin-react latest: \" + \\(npm view @vitejs/plugin-react version\\); \"plugin-react peer vite: \" + \\(npm view @vitejs/plugin-react peerDependencies.vite\\))",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }
