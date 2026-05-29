@@ -18,7 +18,14 @@ own grants nothing that RLS + locked-down signups don't already gate.
 
 ## CP1 — Fresh repo, scaffold, and a live deploy
 
-**Status:** scaffold built locally; pushing to GitHub to trigger the live deploy.
+**Status:** ✅ LIVE at https://mac-fa.github.io/absence-sync/ (HTTP 200, JS + CSS assets 200,
+renders correctly at mobile width 390×844).
+
+**Deploy gotcha hit:** the *first* workflow run's `deploy` job failed with
+`Creating Pages deployment failed … Ensure GitHub Pages has been enabled` — a race because Pages
+hadn't been turned on yet when the job ran. Fixed by enabling Pages (Source = GitHub Actions) via the
+API and re-running the workflow; second run succeeded. Repo is **public** so Pages works on a free
+account; the frontend is public-safe by design (see anon-key note above).
 
 ### Dependency versions (installed)
 
